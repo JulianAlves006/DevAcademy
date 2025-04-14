@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Jersey+10&display=swap');
+
+/* Código para estilização da fonte não pixelada da pagina (Usar nos textos que não são pixelados) */
+.belleza-regular {
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Código para estilização da fonte pixelada da pagina (Usar nos textos que são pixelados) */
+.jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.classes{
+    margin-right: 10vh;
+}
+
+.classes ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.classes li{
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    width: 40vh;
+    max-width: 40vh;
+}
+
+.classes .title{
+    font-size: 4vh;
+    margin-top: 0;
+}
+
+.classes img{
+    max-width: 64%;
+}
+
+.classes .content{
+    font-size: 3vh;
+}
+
+.acessCLasses{
+    text-align: center;
+    text-decoration: none;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vh;
+    color: white;
+    background-color: #006973;
+    border-radius: 30px;
+    padding: 1vh;
+    margin-bottom: 1vh;
+}
