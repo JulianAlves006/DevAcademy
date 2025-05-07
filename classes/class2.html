@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Entrada e saída de dados</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../frontend/css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../frontend/css/class.css'>
+    <link rel="stylesheet" href="../frontend/css/classes.css">
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Página Inicial</a></li>
+                <li class="menu"><a href="../classes.html">Aulas</a></li>
+                <li><a href="#">Exercicios</a></li>
+                <li><a href="#">Dúvidas</a></li>
+                <li><a href="#">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <article>
+            <section class="title">Aula 2</section>
+            <section class="content">
+                <h1>Introdução a programação em C</h1>
+                <b><p>História:</p></b>
+                <p>A linguagem C foi criada em 1970 por Dennis Ritchie, no Bell Laboratories, como uma evolução da linguagem B. Ela tem suas raízes em duas linguagens anteriores: Algol 68 e BCPL. 
+                    <br>Seu grande marco aconteceu quando Dennis Ritchie e Ken Thompson reescreveram o código do Unix, utilizando C, o que levou à criação do sistema operacional que conhecemos hoje como Linux. 
+                    <br>Nos anos 80, C passou a ser amplamente reconhecida como uma linguagem de propósito geral, com diversos compiladores desenvolvidos por diferentes fabricantes,
+                    e até hoje C continua sendo essencial em áreas como sistemas operacionais e firmware.
+                </p>
+                <b><p>Importância:</p></b>
+                <p>A linguagem C  é muito importante pois é eficiente, permitindo controlar o hardware do computador. 
+                   Ela é uma linguagem simples, e uma base para as outras, se tornando assim fundamental.
+                  <br>Ela também permite a programação de microcontroladores, que são sistemas eletrônicos compactos semelhantes a computadores. 
+                   Sua manipulação direta da memória otimiza o desempenho, permite reutilização de códigos e oferece portabilidade entre diferentes plataformas.
+                </p>
+
+                <b><h2>Estrutura de um Programa em C</h2></b>
+                <b><p>Bibliotecas:</p></b>
+                <p>Para estruturarmos um programa em C, primeiro precisamos adicionar suas bibliotecas. As bibliotecas  possibilitam a criação do código, pois são um conjunto de funções e recursos que facilitam o desenvolvimento do software. As mais usadas são: stdlib. h., stdio. h. (funções de entrada e saída). 
+                </p>
+                <b><p>Função main e return 0:</p></b>
+                <p>Ela é o que inicia e controla o programa. Dentro dela adicionamos todo o código, como variáveis, desenvolvimento e saída de dados. 
+                </p>
+                <b><p>Exemplo:</p></b>
+                <section class="sintax">
+                    <p>#include stdio.h</p>
+                    <p>int main() {</p>
+                        <p>// codigo do programa</p>
+                        <p>return 0;</p>
+                        <p>//Indica que o programa foi  finalizado com sucesso</p>
+                    <p>}</p>
+                </section>
+
+                <b><h3>Como compilar e executar um programa em C</h3></b>
+                <p>Para executar um código em C, precisamos usar um compilador. Para isso temos alguns compiladores gratuitos, como: 
+                </p>
+                <ul class="classList">
+                    <b><li>DEV C++</li>
+                    <li>GCC (GNU Compiler Collection)</li>
+                    <li>CodeBlocks</li></b>
+                </ul>
+
+                <b><h4>Sintaxe</h4></b>
+                <p>Com a sintaxe, aprendemos as regras e estruturas para criar um programa funcional e organizado. Um princípio básico que devemos aprender são as boas práticas.
+                </p>
+                <ul class="classList">
+                    <b><li>Fazer códigos comentados, para isso utilizamos “// comentário”.</li>
+                    <li>Codar de forma estruturada.</li>
+                    <li>Organize seu código, pois será mais fácil corrigir possíveis erros.</li>
+                    <li>Utilize nomes simples, ou palavras chave para a criação de variáveis</li></b>
+                </ul>
+                <b><p>Exemplo de código com boas práticas:</p></b>
+                <section class="sintax">
+                    <p>//Inclusão de Bibliotecas</p>
+                    <p>#include stdio.h</p>
+                    <p>#include stdlib.h</p>
+                    
+                    <p>//Função Main</p>
+                    <p>int main ()</p>
+                    <p>{</p>
+                        <p>//Mensagem que irá ser mostrada na tela</p>
+                        <p>printf ("Olá Mundo");</p>
+                    <p>//Finalização do Programa</p>
+                    <p>return 0;</p>
+                    <p>}</p>
+                </section>
+            </section>
+        </article>
+    </div>
+</body>
+</html>
