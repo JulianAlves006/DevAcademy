@@ -29,6 +29,17 @@
     color: aliceblue;
 }
 
+.titleSimple{
+    font-size: 8vh;
+    margin-bottom: 5vh;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: 1px solid #066172;
+    text-align: center;
+    color: #066172;
+}
+
 .content{
     border: solid #066172; 
     border-top: none;
@@ -91,11 +102,17 @@ header {
 }
 
 .caixa {
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .accordion {
     margin-bottom: 20px;
+}
+
+hr{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .accordion-botao {
@@ -103,7 +120,7 @@ header {
     background-color: #00646b;
     color: white;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
     font-size: 3vh;
     font-weight: bold;
     margin: 10px 0;
