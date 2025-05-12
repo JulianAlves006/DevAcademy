@@ -14,18 +14,9 @@
     font-style: normal;
 }
 
-html {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
 }
 
 header{
