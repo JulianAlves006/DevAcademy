@@ -14,6 +14,20 @@
     font-style: normal;
 }
 
+html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
 header{
     margin-bottom: 5vh;
 }
@@ -48,26 +62,118 @@ nav li:hover{
     border-bottom: 1px solid #066172;
 }
 
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main h1 {
+    text-align: center;
+    font-family: "Belleza", sans-serif;
+    font-size: 4vh;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+}
+
+.aprendizado {
+    background-image: url("../img/background-tela-inicial.png");
+    background-repeat: repeat-x;           
+    background-size: auto 100%;            
+    background-position: top left;         
+    padding: 8vh 5vw;                       
+    margin-bottom: 4vh;
+    font-family: "Belleza", sans-serif;
+    width: 100vw;                           
+    box-sizing: border-box;
+}
+
+.aprendizado h2 {
+    display: inline-block;
+    background-color: #066172;
+    color: white;
+    padding: 1vh 2vw;
+    border-radius: 20px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 2.5vh;
+    margin-bottom: 1vh;
+}
+
+.aprendizado p {
+    font-size: 2.3vh;
+    margin-top: 1vh;
+    margin-left: 2vw;
+    color: black;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin-bottom: 2.5vh;
+    z-index: 1;
+}
+
+.sim, .nao {
+    background-color: transparent;
+    border: none;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 2.5vh;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sim {
+    background-color: #066172;
+    color: white;
+    padding: 1vh 3vw;
+    border-radius: 20px;
+}
+
+.sim:hover {
+    background-color: #044a56;
+}
+
+.nao {
+    color: black;
+    font-family: "Belleza", sans-serif;
+    padding: 1vh 0;
+}
+
+.nao:hover {
+    text-decoration: underline;
+}
+
 footer {
     background-image: url("../img/footer.png");
-    background-size: cover;         /* Faz a imagem cobrir todo o footer */
-    background-position: center;    /* Centraliza a imagem */
-    background-repeat: no-repeat;   /* Evita repetição da imagem */
-    width: 100%;                  /* Ocupa toda a largura da tela */
-    min-height: 35vh;              /* Altura mínima – ajustável conforme o conteúdo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 45vh;
     max-height: none;
     display: flex;
     position: fixed;
     font-size: 2vh;
     left: 0;
+    bottom: 0;
 }
 
 footer p {
     position: absolute;
-    bottom: 0;         /* Distância do final do footer */
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
-    color: white;        
+    color: white;
     text-align: center;
+    z-index: 0;
 }
