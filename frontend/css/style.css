@@ -137,6 +137,7 @@ main h1 {
     color: black;
     font-family: "Belleza", sans-serif;
     padding: 1vh 0;
+    transition: all 0.2s ease;
 }
 
 .nao:hover {
