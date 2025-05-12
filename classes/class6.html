@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Operadores e Expressões</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../frontend/css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../frontend/css/class.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="../frontend/css/classes.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Página Inicial</a></li>
+                <li class="menu"><a href="../classes.html">Aulas</a></li>
+                <li><a href="#">Exercicios</a></li>
+                <li><a href="#">Dúvidas</a></li>
+                <li><a href="#">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <article>
+            <section class="title">Aula 5</section>
+            <section class="content">
+                <h1>Estruturas Condicionais</h1>
+                <h2 class="subtitulo">If e Else</h2> </br>
+                <p>A estrutura if é usada para verificar uma condição.</p>
+                <p>Se a condição for <b>verdadeira</b>, o código dentro do bloco if será executado.</p>
+                <p>Se for <b>falsa</b>, o código dentro do bloco else será executado (se existir).
+                </p>
+                <br>
+                <p>Por exemplo:</p>
+                <img src="../frontend/img/aula06/aula05ifelse.png" alt="if_else">
+                <p>Explicacao:</p>
+                <p>Se a variável idade for maior ou igual a 18, o programa imprime "Você é maior de idade!".</p>
+                <p>Caso contrário, imprime "Você é menor de idade!".</p>
+
+                <h2 class="subtitulo"> Estrutura if-else if-else</h2> </br>
+                <p>Às vezes, precisamos verificar várias condições.</p>
+                <p>Para isso, usamos <b>if</b>, seguido de <b>else if</b> para checar outras condições, e finalmente
+                    <b>else</b> para o caso em que nenhuma das condições anteriores é verdadeira.
+                </p>
+                <p>Por exemplo:</p>
+                <img src="../frontend/img/aula06/aula05elseif.png" alt="if_else">
+                <p>Explicacao:</p>
+                <p>Se a nota for maior ou igual a 9, imprime "Aprovado com distinção!".</p>
+                <p>Se não, mas for maior ou igual a 6, imprime "Aprovado!".</p>
+                <p>Se for menor que 6, imprime "Reprovado!".</p>
+
+                <h2 class="subtitulo"> Estrutura switch e case</h2> </br>
+                <p>O switch é utilizado quando temos várias opções para verificar, tornando o código mais organizado
+                    quando há muitas condições a serem verificadas.</p>
+                <p>Por exemplo:</p>
+                <img src="../frontend/img/aula06/aula05switchcase.png" alt="if_else">
+                <p>Explicacao:</p>
+                <p>O valor de dia é comparado com os casos dentro do <b>switch</b>.</p>
+                <p>Se dia for 3, imprime "Terça-feira".</p>
+                <p>Se for menor que 6, imprime "Reprovado!".Se o valor não corresponder a nenhum case, o programa vai
+                    para o default, que imprime "Dia inválido". </p>
+
+                <h2 class="subtitulo"> Uso do break e default</h2> </br>
+                <p><b>Break:</b> Serve para sair do bloco do switch ou de um laço (for, while).</p>
+                <p><b>Default:</b> Serve para quando nenhum dos case do switch for verdadeiro, ele executa o código do
+                    default. </p>
+                <p>No exemplo do switch, o break faz com que o programa saia da estrutura switch assim que um dos casos
+                    for encontrado.</p>
+
+            </section>
+        </article>
+    </div>
+</body>
+
+</html>
