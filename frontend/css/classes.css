@@ -14,28 +14,38 @@
     font-style: normal;
 }
 
-.classes{
-    margin-right: 10vh;
+.classes {
+  display: flex;
+  justify-content: center;
+  padding: 2vh;
 }
 
-.classes ul{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+.classes ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Distribui espaços igualmente */
+  gap: 5vh 2vw;                  /* Espaçamento entre linhas e colunas */
+  padding: 0;
+  margin: 0 auto;                /* Centraliza horizontalmente */
+  list-style: none;
+  max-width: 1200px;            /* Limita a largura total para controle visual */
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.classes li{
-    font-family: "Belleza", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    border: 2px solid;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-    width: 40vh;
-    max-width: 40vh;
+.classes li {
+  font-family: "Belleza", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border: 2px solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  max-width: 300px;
+  padding: 2vh;
+  box-sizing: border-box;
 }
 
 .classes .title{
