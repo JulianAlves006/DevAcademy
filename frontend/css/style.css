@@ -134,10 +134,12 @@ main h1 {
 }
 
 .nao {
-    color: black;
+    color: white;
+    background-color: red;
     font-family: "Belleza", sans-serif;
-    padding: 1vh 0;
+    padding: 1vh 3vw;
     transition: all 0.2s ease;
+    border-radius: 20px;
 }
 
 .nao:hover {
