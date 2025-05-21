@@ -1,207 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tipos de Dados e Variáveis | DevAcademy</title>
-    <link rel="shortcut icon" type="image/png" href="frontend/img/logo.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../frontend/css/style.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="../frontend/css/class.css" type="text/css" media="screen">
-    <script src="main.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tipos de Dados e Variáveis | DevAcademy</title>
+  <link rel="shortcut icon" type="image/png" href="../frontend/img/logo.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../frontend/css/style.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="../frontend/css/class.css" type="text/css" media="screen">
+  <script src="main.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Página Inicial</a></li>
-                <li class="menu"><a href="../classes.html">Aulas</a></li>
-                <li><a href="#">Exercícios</a></li>
-                <li><a href="#">Dúvidas</a></li>
-                <li><a href="../aboutus.html">Sobre nós</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Página Inicial</a></li>
+        <li class="menu"><a href="../classes.html">Aulas</a></li>
+        <li><a href="#">Exercícios</a></li>
+        <li><a href="#">Dúvidas</a></li>
+        <li><a href="../aboutus.html">Sobre nós</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div>
+    <article>
+      <section class="title">Aula 3</section>
+      <section class="content">
+        <h1>Tipos de Dados e Variáveis</h1>
 
-    <div>
-        <article>
-            <section class="title">Aula 3</section>
+        <p>Esta aula tem como objetivo apresentar os principais tipos de dados e a declaração de variáveis na linguagem C.</p>
 
-            <section class="content">
-                <h1>1. Introdução</h1>
-                <p>
-                    O objetivo deste projeto é desenvolver um site educativo completo voltado para o ensino de lógica e programação básica na linguagem C,
-                    visando repassar os conhecimentos adquiridos durante o semestre para a sociedade, aprimorando a capacidade de pesquisa e organização da
-                    informação, além de incentivar o trabalho em equipe e a busca de conhecimento.
-                </p>
-                <p>
-                    O site será estruturado de forma lógica e acessível, garantindo que os conteúdos sejam apresentados em uma ordem coerente para facilitar o aprendizado.
-                </p>
+        <h2>1. Tipos Primitivos</h2>
+        <ul class="classList">
+          <li><b>int</b>: números inteiros.</li>
+          <li><b>float</b>: números decimais com menor precisão (até 7 casas).</li>
+          <li><b>double</b>: números decimais com maior precisão (até 15 casas).</li>
+          <li><b>char</b>: caracteres individuais.</li>
+        </ul>
 
-                <h1>2. Estrutura do Conteúdo</h1>
-                <h2>2.1. Tipos de Dados e Variáveis</h2>
+        <h2>2. Declaração e Inicialização</h2>
+        <p>
+          Para declarar uma variável, informe o tipo e o nome. Para inicializar, atribua um valor.
+        </p>
+        <section class="sintax">
+          <p>int idade = 25;</p>
+          <p>char letra = 'A';</p>
+          <p>float altura = 1.75;</p>
+        </section>
 
-                <h3>Tipos Primitivos</h3>
-                <ul class="classList">
-                    <li><b>int</b>: utilizado para armazenar números inteiros.</li>
-                    <li><b>float</b>: utilizado para armazenar números decimais com até 7 casas decimais.</li>
-                    <li><b>double</b>: semelhante ao float, mas com maior precisão (até 15 casas decimais).</li>
-                    <li><b>char</b>: utilizado para armazenar caracteres individuais.</li>
-                </ul>
+        <h2>3. Constantes</h2>
+        <p>Constantes são valores que não mudam durante a execução do programa.</p>
+        <ul class="classList">
+          <li><code>#define PI 3.14</code> // Constante simbólica</li>
+          <li><code>const float PI = 3.14;</code> // Constante com tipo</li>
+        </ul>
 
-                <h3>Declaração e Inicialização de Variáveis</h3>
-                <p>
-                    Em C, a declaração informa ao compilador o nome e tipo da variável. Para inicializá-la, atribuímos um valor.
-                </p>
-                <p>Regras importantes:</p>
-                <ul class="classList">
-                    <li>Declarar antes de usar;</li>
-                    <li>Nome não pode começar com número nem ser palavra reservada;</li>
-                    <li>Finalizar com ponto e vírgula (;).</li>
-                </ul>
+        <h2>4. Tipos de Constantes</h2>
+        <ul class="classList">
+          <li>Inteira: <code>printf("Idade: %d", 18);</code></li>
+          <li>Real: <code>printf("PI: %.2f", 3.14);</code></li>
+          <li>Caractere: <code>printf("Letra: %c", 'A');</code></li>
+          <li>String: <code>printf("Mensagem: %s", "Olá");</code></li>
+        </ul>
 
-                <p><b>Exemplo de declaração:</b></p>
-                <section class="sintax">
-                    <pre><code>
-int idade, telefone;
-char letra, vogal;
-float altura, media;</code></pre>
-                </section>
+        <h2>5. Regras e Boas Práticas de Nomenclatura</h2>
+        <ul class="classList">
+          <li>Começar com letra ou underline.</li>
+          <li>Evitar palavras reservadas.</li>
+          <li>Seguir padrão camelCase ou snake_case.</li>
+          <li>Usar nomes significativos: <code>mediaAluno</code>, <code>totalVendas</code>.</li>
+        </ul>
 
-                <p><b>Exemplo de inicialização:</b></p>
-                <section class="sintax">
-                    <pre><code>
-int idade = 25;
-char vogal = 'A';
-float altura = 1.75;
-                    </code></pre>
-                </section>
+        <h2>6. Exemplos de Código</h2>
 
-                <h3>Constantes</h3>
-                <p>
-                    Constantes são valores fixos durante a execução. Oferecem segurança, reutilização e facilidade de manutenção.
-                </p>
-                <p><b>Tipos de constantes:</b></p>
-                <ul class="classList">
-                    <li>Inteira: <code>printf("A idade mínima é %d\n", 18);</code></li>
-                    <li>Real: <code>printf("PI vale aproximadamente %.2f\n", 3.14);</code></li>
-                    <li>Caractere: <code>printf("Primeira letra: %c\n", 'A');</code></li>
-                    <li>String: <code>printf("Mensagem: %s\n", "Olá, mundo!");</code></li>
-                    <li>Simbólica: <code>#define PI 3.14159</code> ou <code>const float PI = 3.14159;</code></li>
-                </ul>
+        <h3>Exemplo 1: Declaração e Saída</h3>
+        <section class="sintax">
+          <p>#include &lt;stdio.h&gt;</p>
+          <p>int main() {</p>
+          <p>  int idade = 20;</p>
+          <p>  printf("Idade: %d\n", idade);</p>
+          <p>  return 0;</p>
+          <p>}</p>
+        </section>
 
-                <h3>Regras de Nomenclatura para Variáveis</h3>
-                <p><b>Regras obrigatórias:</b></p>
-                <ul class="classList">
-                    <li>Começar com letra ou underline (_);</li>
-                    <li>Pode conter letras, números e underlines;</li>
-                    <li>Não usar palavras-chave (ex. <code>int</code>, <code>return</code>);</li>
-                    <li>Sensível a maiúsculas/minúsculas (ex. <code>valor</code> ≠ <code>Valor</code>);</li>
-                </ul>
+        <h3>Exemplo 2: Constante e Cálculo de área</h3>
+        <section class="sintax">
+          <p>#include &lt;stdio.h&gt;</p>
+          <p>int main() {</p>
+          <p>  const float PI = 3.14;</p>
+          <p>  float raio = 2.0;</p>
+          <p>  float area = PI * raio * raio;</p>
+          <p>  printf("Area: %.2f\n", area);</p>
+          <p>  return 0;</p>
+          <p>}</p>
+        </section>
 
-                <p><b>Boas práticas:</b></p>
-                <ul class="classList">
-                    <li>Usar nomes significativos (ex. <code>mediaAluno</code>);</li>
-                    <li>Escolher um padrão: <code>camelCase</code> ou <code>snake_case</code>;</li>
-                    <li>Variáveis booleanas com <code>is</code>, <code>has</code>, <code>can</code> (ex. <code>isAtivo</code>);</li>
-                </ul>
+        <h3>Exemplo 3: Entrada de Dados</h3>
+        <section class="sintax">
+          <p>#include &lt;stdio.h&gt;</p>
+          <p>int main() {</p>
+          <p>  float altura;</p>
+          <p>  printf("Digite sua altura: ");</p>
+          <p>  scanf("%f", &altura);</p>
+          <p>  printf("Altura: %.2f\n", altura);</p>
+          <p>  return 0;</p>
+          <p>}</p>
+        </section>
 
-                <p><b>Exemplos corretos:</b></p>
-                <section class="sintax">
-                    <pre><code>
-int contador;
-float temperatura_media;
-char inicial_usuario;
-                    </code></pre>
-                </section>
-
-                <p><b>Exemplos incorretos:</b></p>
-                <section class="sintax">
-                    <pre><code>
-int 123idade;        // Inicia com número
-float valor total;   // Contém espaço
-char for;            // Palavra reservada
-                    </code></pre>
-                </section>
-
-                <h1>3. Exemplos de Códigos Resolvidos</h1>
-
-                <h3>Exemplo 1: Cálculo da média de duas notas</h3>
-                <p>
-                    Neste exemplo, usamos o tipo <code>float</code> para armazenar números decimais e calcular a média de duas notas.
-                </p>
-                <section class="sintax">
-                    <pre><code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    float nota1 = 7.5;
-    float nota2 = 8.3;
-    float media;
-
-    media = (nota1 + nota2) / 2;
-
-    printf("A média do aluno é: %.2f\n", media);
-
-    return 0;
-}
-                    </code></pre>
-                </section>
-                <p><b>Saída esperada:</b> A média do aluno é: 7.90</p>
-
-                <h3>Exemplo 2: Uso de constantes e cálculo de área</h3>
-                <p>
-                    Utilizamos uma constante para armazenar o valor de PI e calcular a área de um círculo. O uso de <code>const</code> garante que o valor não será alterado.
-                </p>
-                <section class="sintax">
-                    <pre><code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    const float PI = 3.14159;
-    float raio = 5.0;
-    float area;
-
-    area = PI * raio * raio;
-
-    printf("Área do círculo: %.2f\n", area);
-
-    return 0;
-}
-                    </code></pre>
-                </section>
-                <p><b>Saída esperada:</b> Área do círculo: 78.54</p>
-
-                <h3>Exemplo 3: Entrada e exibição de informações do usuário</h3>
-                <p>
-                    Neste exemplo, mostramos como declarar variáveis, usar <code>scanf</code> para receber dados do usuário e <code>printf</code> para exibir uma mensagem.
-                </p>
-                <section class="sintax">
-                    <pre><code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    int idade;
-    char inicial;
-
-    printf("Digite sua idade: ");
-    scanf("%d", &idade);
-
-    printf("Digite a inicial do seu nome: ");
-    scanf(" %c", &inicial);
-
-    printf("Você tem %d anos\n", idade);
-    printf("E seu nome começa com '%c'\n", inicial);
-
-    return 0;
-}
-                    </code></pre>
-                </section>
-                <p><b>Saída esperada (exemplo):</b> Você tem 20 anos e seu nome começa com 'J'</p>
-
-                <p><a href="../exercises/class3Exercises.html" class="acessExercises">Exercícios</a></p>
-            </section>
-        </article>
-    </div>
+        <p><a href="../exercises/class3Exercises.html" class="acessExercises">Exercícios</a></p>
+      </section>
+    </article>
+  </div>
 </body>
 </html>
