@@ -62,16 +62,19 @@
 
                 <p><b>Exemplo de declaração:</b></p>
                 <section class="sintax">
-                    <pre><code>int idade, telefone;
+                    <pre><code>
+int idade, telefone;
 char letra, vogal;
 float altura, media;</code></pre>
                 </section>
 
                 <p><b>Exemplo de inicialização:</b></p>
                 <section class="sintax">
-                    <pre><code>int idade = 25;
+                    <pre><code>
+int idade = 25;
 char vogal = 'A';
-float altura = 1.75;</code></pre>
+float altura = 1.75;
+                    </code></pre>
                 </section>
 
                 <h3>Constantes</h3>
@@ -105,16 +108,20 @@ float altura = 1.75;</code></pre>
 
                 <p><b>Exemplos corretos:</b></p>
                 <section class="sintax">
-                    <pre><code>int contador;
+                    <pre><code>
+int contador;
 float temperatura_media;
-char inicial_usuario;</code></pre>
+char inicial_usuario;
+                    </code></pre>
                 </section>
 
                 <p><b>Exemplos incorretos:</b></p>
                 <section class="sintax">
-                    <pre><code>int 123idade;        // Inicia com número
+                    <pre><code>
+int 123idade;        // Inicia com número
 float valor total;   // Contém espaço
-char for;            // Palavra reservada</code></pre>
+char for;            // Palavra reservada
+                    </code></pre>
                 </section>
 
                 <h1>3. Exemplos de Códigos Resolvidos</h1>
@@ -124,7 +131,8 @@ char for;            // Palavra reservada</code></pre>
                     Neste exemplo, usamos o tipo <code>float</code> para armazenar números decimais e calcular a média de duas notas.
                 </p>
                 <section class="sintax">
-                    <pre><code>#include &lt;stdio.h&gt;
+                    <pre><code>
+#include &lt;stdio.h&gt;
 
 int main() {
     float nota1 = 7.5;
@@ -136,7 +144,8 @@ int main() {
     printf("A média do aluno é: %.2f\n", media);
 
     return 0;
-}</code></pre>
+}
+                    </code></pre>
                 </section>
                 <p><b>Saída esperada:</b> A média do aluno é: 7.90</p>
 
@@ -145,7 +154,8 @@ int main() {
                     Utilizamos uma constante para armazenar o valor de PI e calcular a área de um círculo. O uso de <code>const</code> garante que o valor não será alterado.
                 </p>
                 <section class="sintax">
-                    <pre><code>#include &lt;stdio.h&gt;
+                    <pre><code>
+#include &lt;stdio.h&gt;
 
 int main() {
     const float PI = 3.14159;
@@ -157,7 +167,8 @@ int main() {
     printf("Área do círculo: %.2f\n", area);
 
     return 0;
-}</code></pre>
+}
+                    </code></pre>
                 </section>
                 <p><b>Saída esperada:</b> Área do círculo: 78.54</p>
 
@@ -166,7 +177,8 @@ int main() {
                     Neste exemplo, mostramos como declarar variáveis, usar <code>scanf</code> para receber dados do usuário e <code>printf</code> para exibir uma mensagem.
                 </p>
                 <section class="sintax">
-                    <pre><code>#include &lt;stdio.h&gt;
+                    <pre><code>
+#include &lt;stdio.h&gt;
 
 int main() {
     int idade;
@@ -176,12 +188,14 @@ int main() {
     scanf("%d", &idade);
 
     printf("Digite a inicial do seu nome: ");
-    scanf(" %c", &inicial); // espaço antes de %c evita erro na leitura
+    scanf(" %c", &inicial);
 
-    printf("Você tem %d anos e seu nome começa com '%c'\n", idade, inicial);
+    printf("Você tem %d anos\n", idade);
+    printf("E seu nome começa com '%c'\n", inicial);
 
     return 0;
-}</code></pre>
+}
+                    </code></pre>
                 </section>
                 <p><b>Saída esperada (exemplo):</b> Você tem 20 anos e seu nome começa com 'J'</p>
 
