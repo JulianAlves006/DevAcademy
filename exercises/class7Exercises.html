@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercícios 7 | DevAcademy</title>
+    <link rel="shortcut icon" type="image/png" href="frontend/img/logo.png"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../frontend/css/style.css'>
+    <link rel="stylesheet" href="../frontend/css/exercises.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Página Inicial</a></li>
+                <li><a href="../classes.html">Aulas</a></li>
+                <li class="menu"><a href="../exercises.html">Exercícios</a></li>
+                <li><a href="../aboutus.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <article>
+            <section class="caixa" href="#Exercícios">
+                <h1 class="titleSimple">Aula 7</h1>
+
+                <div class="accordion">
+                    <div class="accordion-botao">
+                        <p>Exercício 1, 2 e 3</p> 
+                        <p class="subtitulo">While</p> 
+                        <button class="botao"><div class="seta"></div></button>
+                    </div>
+                    
+                    <div class="painel" style="display: none;">
+                        <ul class="lista-exercicio">
+                            <li>
+                                <h1>1. Escreva um programa que conte de 1 a 10 e mostre os números na tela.</h1>
+                                <br>
+                                <h1>2. Crie um programa que some todos os números digitados pelo usuário até que ele digite 0.</h1>
+                                <br>
+                                <h1>3. Crie um programa que some todos os números digitados pelo usuário até que ele digite a senha correta (escolha uma senha, ou use 1234)</h1>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="accordion">
+                    <div class="accordion-botao">
+                        <p>Solução</p> 
+                        <p class="subtitulo">Exercício 1, 2, 3</p> 
+                        <button class="botao"><div class="seta"></div></button>
+                    </div>
+
+                    <div class="painel" style="display: none;">
+                        <ul class="lista-exercicio">
+                            <li>
+                                <pre style="font-size: 18px;"><code><b>Exercício 1:</b> <br>#include &lt;stdio.h&gt;
+
+int main() {
+    int i = 1;
+
+    while (i <= 10) {
+        printf("%i\n", i);
+        i++;
+    }
+
+    return 0;
+}
+                                </code></pre>
+
+                                <pre style="font-size: 18px;"><code><b>Exercício 2:</b> <br>#include &lt;stdio.h&gt;
+
+int main() {
+    int numero;
+    int soma = 0;
+
+    printf("Digite numeros para somar (digite 0 para encerrar):\n");
+    scanf("%i", &numero);
+
+    while (numero != 0) {
+        soma += numero;
+        scanf("%i", &numero);
+    }
+
+    printf("A soma dos numeros digitados é: %i\n", soma);
+
+    return 0;
+}
+                                </code></pre>
+
+                                <pre style="font-size: 18px;"><code><b>Exercício 3:</b> <br>#include &lt;stdio.h&gt;
+
+int main() {
+    int numero, soma = 0;
+    int senha;
+
+    printf("Digite numeros para somar.\n");
+    printf("Quando quiser parar, digite a senha correta.\n");
+
+    while (1) {
+        printf("Digite um numero (ou a senha para encerrar): ");
+        scanf("%i", &numero);
+
+        if (numero == 1234) {
+            break; // Encerra o laço se a senha for digitada
+        }
+
+        soma += numero;
+    }
+
+    printf("Soma total dos numeros digitados: %i\n", soma);
+
+    return 0;
+}
+                                </code></pre>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!--Exercício aula 7-->
+                <div class="accordion">
+                    <div class="accordion-botao">
+                        <p>Exercício 1, 2 e 3</p> 
+                        <p class="subtitulo">do... while()</p> 
+                        <button class="botao"><div class="seta"></div></button>
+                    </div>
+                    <!--começar aqui os exercícios que comentei do exercício aula 3-->
+
+                    <div class="painel" style="display: none;">
+                        <ul class="lista-exercicio">
+                            <li>
+                                <h1>1. Faça um menu interativo e escolha uma opção para o usuário sair quando terminar de usar.</h1>
+                                <br>
+                                <h1>2. Peça notas ao usuário (entre 0 e 10) até que ele digite -1 e calcule a média.</h1>
+                                <br>
+                                <h1>3. Conte quantos números pares e ímpares o usuário digitou até digitar 0.</h1>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!--Nessa linha pode colocar os exercícios igual ao aula 3-->
+                </div>
+                <div class="accordion">
+                    <div class="accordion-botao">
+                        <p>Solução</p> 
+                        <p class="subtitulo">Exercício 1, 2, 3</p> 
+                        <button class="botao"><div class="seta"></div></button>
+                    </div>
+                    <!--começar aqui os exercícios que comentei do exercício aula 3-->
+
+                    <div class="painel" style="display: none;">
+                        <ul class="lista-exercicio">
+                            <li>
+                                <pre style="font-size: 18px;"><code><b>Exercício 1:</b><br> #include &lt;stdio.h&gt;
+
+int main() {
+    int opcao;
+
+    do {
+        printf("\n==== MENU ====\n");
+        printf("1 - Dizer Ola\n");
+        printf("2 - Mostrar um numero qualquer\n");
+        printf("3 - Sair\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+
+        switch (opcao) {
+            case 1:
+                printf("Ola, usuario!\n");
+                break;
+            case 2:
+                printf("Aqui está o numero: 42\n");
+                break;
+            case 3:
+                printf("Saindo do programa...\n");
+                break;
+            default:
+                printf("Opcao invalida. Tente novamente.\n");
+        }
+    } while (opcao != 3);
+
+    return 0;
+}
+                                </code></pre>
+                                <pre style="font-size: 18px;"><code><b>Exercício 2:</b> <br>#include &lt;stdio.h&gt;
+
+int main() {
+    float nota, soma = 0;
+    int contador = 0;
+
+    do {
+        printf("Digite uma nota entre 0 e 10 (ou -1 para sair): ");
+        scanf("%f", &nota);
+
+        if (nota == -1) {
+            break; // Encerra o laço se o usuário digitar -1
+        }
+
+        if (nota >= 0 && nota <= 10) {
+            soma += nota;
+            contador++;
+        } else {
+            printf("Nota invalida. Digite um valor entre 0 e 10.\n");
+        }
+
+    } while (1);
+
+    if (contador > 0) {
+        float media = soma / contador;
+        printf("Media das notas: %.2f\n", media);
+    } else {
+        printf("Nenhuma nota valida foi digitada.\n");
+    }
+
+    return 0;
+}
+                                </code></pre>
+
+                                <pre style="font-size: 18px;"><code><b>Exercício 3:</b><br> #include &lt;stdio.h&gt;
+
+int main() {
+    int numero;
+    int pares = 0;
+    int impares = 0;
+
+    do {
+        printf("Digite um numero (0 para sair): ");
+        scanf("%i", &numero);
+
+        if (numero == 0) {
+            break;
+        }
+
+        if (numero % 2 == 0) {
+            pares++;
+        } else {
+            impares++;
+        }
+
+    } while (1);
+
+    printf("\nQuantidade de numeros pares: %i\n", pares);
+    printf("Quantidade de numeros impares: %i\n", impares);
+
+    return 0;
+}
+                                </code></pre>
+                            </li>
+                        </ul>
+                    </div> <!--Lembrar de colocar none novamente no display-->
+                    
+                    <!--Nessa linha pode colocar os exercícios igual ao aula 3-->
+                </div>
+
+                <hr>
+
+                <div class="accordion">
+                    <div class="accordion-botao">
+                        <p>Exercício 1, 2 e 3</p>
+                        <p class="subtitulo">for()</p>
+                        <button class="botao"><div class="seta"></div></button>
+                    </div>
+                    <div class="painel" style="display: none;"> <!--Lembrar de colocar none novamente no display-->
+                        <ul class="lista-exercicio">
+                            <li>
+                                <h1>1. Crie um programa que imprima os números ímpares de 1 a 20.</h1>
+                                <br>
+                                <h1>2. Escreva um programa que imprima os números pares de 1 a 20.</h1>
+                                <br>
+                                <h1>3. Escreva um programa que calcule o fatorial de um número fornecido pelo usuário.</h1>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-botao">
+                        <p>Solução</p> 
+                        <p class="subtitulo">Exercício 1, 2, 3</p> 
+                        <button class="botao"><div class="seta"></div></button>
+                    </div>
+                    <!--começar aqui os exercícios que comentei do exercício aula 3-->
+                    <div class="painel" style="display: none;">
+                        <ul class="lista-exercicio">
+                            <li>
+                                <pre style="font-size: 18px;"><code><b>Exercício 1:</b><br>#include &lt;stdio.h&gt;
+
+int main() {
+    int i;
+
+    for (i = 1; i <= 20; i++) {
+        if (i % 2 != 0) {
+            printf("%i\n", i);
+        }
+    }
+
+    return 0;
+}
+                                </code></pre>
+
+                                <pre style="font-size: 18px;"><code><b>Exercício 2:</b><br>#include &lt;stdio.h&gt;
+
+int main() {
+    int i;
+
+    for (i = 1; i <= 20; i++) {
+        if (i % 2 == 0) {
+            printf("%i\n", i);
+        }
+    }
+
+    return 0;
+}
+                                </code></pre>
+
+                                <pre style="font-size: 18px;"><code><b>Exercício 3:</b><br>#include &lt;stdio.h&gt;
+
+int main() {
+    int n, i;
+    int fatorial = 1;
+
+    printf("Digite um numero inteiro positivo: ");
+    scanf("%i", &n);
+
+    if (n < 0) {
+        printf("Nao existe fatorial de numero negativo.\n");
+    } else {
+        for (i = 1; i <= n; i++) {
+            fatorial = fatorial * i;
+        }
+        printf("Fatorial de %i é: %d\n", n, fatorial);
+    }
+
+    return 0;
+}
+                                </code></pre>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </div>
+    <script src="../frontend/js/exercises.js"></script>
+</body>
+</html>
