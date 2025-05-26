@@ -10,7 +10,6 @@ botoes.forEach(botao => {
         painel.style.display = estaAberto ? 'none' : 'block';
         
         seta.classList.toggle('girada', !estaAberto);
-        //gira a seta se quiser (exemplo: seta.classList.toggle('girada'))
     });
 });
 
