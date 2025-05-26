@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Estruturas de Repetição | DevAcademy</title>
+    <link rel="shortcut icon" type="image/png" href="frontend/img/logo.png"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../frontend/css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../frontend/css/class.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Página Inicial</a></li>
+                <li class="menu"><a href="../classes.html">Aulas</a></li>
+                <li><a href="#">Exercícios</a></li>
+                <li><a href="#">Dúvidas</a></li>
+                <li><a href="..\aboutus.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <article>
+            <section class="title">Aula 7</section>
+            <section class="content">
+                <h1>Estruturas de Repetição:</h1>
+                
+                <p>As estruturas de repetição, executam a repetição de um conjunto de instruções enquanto uma determinada condição é verdadeira.<br>
+                Na linguagem C, existem três estruturas de repetição, são elas: while, do… while, for.<br>
+                Cada uma dessas estruturas tem suas funções em termos de funcionamento. Todas serão apresentadas aqui, começando pelo While:</p>
+                
+                <h1>While():</h1>
+                
+                <p>Imagine que você tem uma jarra vazia e queira enchê-la de água, você só vai parar de<br> 
+                colocar água quando ela estiver cheia.<br>
+                Na linguagem C, a função while é como uma instrução que diz: ”Continue fazendo isso<br> 
+                enquanto uma condição seja verdadeira”. Ou seja, o código vai continuar rodando<br> 
+                até você executar a opção que você escolheu para encerrar o programa.</p>
+
+                <p>Aqui está um exemplo prático de while():</p>
+            
+            <pre style="color: rgb(94, 143, 45); font-size: 20px;"><code>#include &lt;stdio.h&gt;
+                
+                int main() {
+                    int contador = 1;  // Inicializa o contador
+                    
+                    while (contador <= 5) {  // Enquanto o contador for menor ou igual a 5
+                        printf("Contador: %i\n", contador);  // Imprime o valor do contador
+                        contador++;  // Incrementa o contador
+                    }
+                    
+                    return 0;
+                }
+            </code></pre>
+            <p><b>Explicação:</b></p>
+                <ol style="font-size: 22px;">
+                    <li><b>Incialiação:</b><span> contador começa com valor 1.</span></li>
+                    <li><b>Condição:</b><span> O loop while() executa enquanto contador <= 5.</span></li>
+                    <li><b>Corpo do loop:</b><ul><li>Imprime um valor atual do contador</li> 
+                        <li>incrementa o contador com contador++.</li></ul></li>
+                    <li><b>Término:</b><span> Quando o contador chegar a 6, a condição contador <= 5 se torna falsa, e o loop termina.</span></li>
+                </ol>
+            <p>Esse é um exemplo clássico de um loop whlle() para contar de 1 a 5.</p>
+
+            <section>
+                <h1>do... while():</h1>
+                    <p>O do...while é um loop (laço de repetição) que garante que o bloco de código seja<br> 
+                    executado pelo menos uma vez, mesmo que a condição de parada seja falsa desde o início.<br> 
+                    Depois da primeira execução, ele verifica a condição para decidir se repete ou não.<br> 
+                    Use quando tiver que fazer um loop que se execute ao menos uma vez.</p>
+
+                    <p><b>Comparação com o while tradicional:</b></p>
+                <table border="1" cellpadding="10" style="border-collapse: collapse; text-align: left; font-size: 30px;">
+                    <tr style="text-align: center;">
+                        <th>While</th>
+                        <th>do... while</th>
+                    </tr>
+                    <tr>
+                        <td>Verifica a condição <b>antes</b> de executar.</td>
+                        <td>Executa <b>primeiro</b> e depois verifica a condição.</td>
+                    </tr>
+                    <tr>
+                        <td>Pode <b>nunca executar</b> se a condição for falsa.</td>
+                        <td><b>Sempre executa pelo menos uma vez</b>, <br>mesmo se a condição for falsa.</td>
+                    </tr>
+                </table>
+
+        <p><b>Exemplo prático: Validação de senha</b></p>
+
+        <div style="color: rgb(94, 143, 45); font-size: 22px;">
+            <pre><code>#include &lt;stdio.h&gt;
+                
+                int main() {
+                    int senha;
+                    
+                    do {
+                        printf("Digite a senha (1234 para acertar): ");
+                        scanf("%i", &senha);
+                    } while (senha != 1234); // Repete enquanto a senha estiver errada
+                    
+                    printf("Acesso permitido!\n");
+                    return 0;
+                }
+            </code>
+            </pre>
+        </div>
+        <p><b>Como funciona:</b></p>
+            <ol style="font-size: 22px;">
+                <li>O programa pede a senha pelo menos uma vez (mesmo que o usuário digite 1234 de primeira).</li>
+                <li>Se a senha estiver errada (!= 1234), o loop repete.</li>
+                <li>Quando a senha estiver correta, o loop termina.</li>
+            </ol>
+
+        </section>
+        <section>
+            <h1>for()</h1>
+            <p>O for é mais um loop, usado quando você sabe <b>quantas vezes</b> um bloco de código deve ser executado.<br> 
+                Ele é composto por três partes principais:</p>
+                <ol style="font-size: 4vh;">
+                    <li><b>Inicialização</b></li>
+                    <li><b>Condição de continuação,</b></li>
+                    <li><b>Incremento/Atualização.</b></li>
+                </ol>
+
+                <p><b>Sintaxe Básica:</b></p>
+                        <pre style="font-size: 4vh;"><code>for (inicialização; condição; incremento i++) {
+                            //Bloco de código a ser repetido
+                        }
+                            </code>
+                        </pre>
+                         <div style="display: flex; justify-content: center; margin-top: -60px;">
+                            <table border="1" cellpadding="10" style="border-collapse: collapse; text-align: cent; font-size: 4.5vh;">
+                                <tr style=" text-align: center;">
+                                    <th>Parte</th>
+                                    <th>Descrição</th>
+                                    <th>Exemplo</th>
+                                </tr>
+                                <tr>
+                                    <td><b>Inicialização</b></td>
+                                    <td>Executa <b>uma vez</b> no início.<br>Define a variável de controle</td>
+                                    <td>int i = 0;</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Condição</b></td>
+                                    <td>Verificada <b>antes de cada interação.</b><br>
+                                         Se falsa, o loop para.</td>
+                                    <td>i < 10;</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Incremento</b></td>
+                                    <td>Executada após cada interação.<br> Atualiza a variável de controle.</td>
+                                    <td>i++ ou i += 2;</td>
+                                </tr>
+                            </table>
+                         </div>
+                                <p><b>Exemplo prático:</b></p>
+                                    <pre style="color: rgb(94, 143, 45); font-size: 4vh;"><code>#include &lt;stdio.h&gt;
+                                        
+                int main() {
+                        for (int i = 1; i <= 5; i++) {
+                            printf("%i ", i);
+                        }
+                        return 0;
+                    }
+                                
+                                        </code>
+                                    </pre>
+                                        <p style="margin-top: -5%;"><b>Saída: 1 2 3 4 5</b></p>
+                                            <ol style="font-size: 4vh;">
+                                                <li>i = 1 (inicialização).</li>
+                                                <li>Verifica i <= 5 (verdadeiro).</li>
+                                                <li>Executa printf("%d ", i).</li>
+                                                <li>i++ (incrementa para 2).</li>
+                                                <li>Repete até i ser 6 (quando a condição i <= 5 se torna falsa).</li>
+                                            </ol>
+
+        </section>
+                <p><a href="../exercises/class7Exercises.html" class="acessExercises">Exercícios</a></p>
+            </section>
+        </article>
+    </div>
+</body>
+</html>
