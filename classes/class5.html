@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Entrada e saída de dados | DevAcademy</title>
-    <link rel="shortcut icon" type="image/png" href="../frontend/img/logo.png"/>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../frontend/css/style.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../frontend/css/class.css'>
+    <link rel="shortcut icon" type="image/png" href="../frontend/img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../frontend/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../frontend/css/class.css">
 </head>
 <body>
     <header>
-        <nav>c
+        <nav>
             <ul>
                 <li><a href="../index.html">Página Inicial</a></li>
                 <li class="menu"><a href="../classes.html">Aulas</a></li>
@@ -26,60 +26,66 @@
             <section class="title">Aula 5</section>
             <section class="content">
                 <h1>Printf() - Saída de dados em C</h1>
-                <p>A função printf é utilizada para exibir informações na tela. Ela pertence à biblioteca padrão stdio.h.</p>
+                <p>A função <code>printf</code> é utilizada para exibir informações na tela. Ela pertence à biblioteca padrão <code>stdio.h</code>.</p>
                 <b><p>Sintaxe:</p></b>
-                <section class="sintax"><p>printf("texto");</p><p>printf("Valor: %i", variavel);</p></section>
+                <section class="sintax">
+                    <pre><code>printf("texto");
+printf("Valor: %i", variavel);</code></pre>
+                </section>
                 <b><p>Exemplo:</p></b>
                 <section class="sintax">
-                    <p>#include stdio.h</p>
-                    <p>int main() {</p>
-                        <p>printf("Hello, World!\n");</p>
-                        <p>return 0;</p>
-                    <p>}</p>
+                    <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}</code></pre>
                 </section>
                 <br>
                 <p>Especificadores de formato comuns:</p>
                 <ul class="classList">
-                    <li>%i - inteiro - Ex: 1, 2, 3...</li>
-                    <li>%f - ponto flutuante (float/double) - Ex: 1.5, 2.72 ...</li>
-                    <li>%c - caractere - Ex: a, b, c...</li> 
+                    <li><code>%i</code> - inteiro - Ex: 1, 2, 3...</li>
+                    <li><code>%f</code> - ponto flutuante (float/double) - Ex: 1.5, 2.72...</li>
+                    <li><code>%c</code> - caractere - Ex: a, b, c...</li> 
                 </ul>
                 <b><p>Exemplo:</p></b>
                 <section class="sintax">
-                    <p>int idade = 20;</p>
-                    <p>printf("A idade é %i anos\n", idade);</p>
+                    <pre><code>int idade = 20;
+printf("A idade é %i anos\n", idade);</code></pre>
                 </section>
-                <p>Saída: A idade é 20 anos</p>
+                <p><strong>Saída:</strong> A idade é 20 anos</p>
                 <br>
                 <b><p>Formatação do float:</p></b>
-                <p>Com o %f (float), a saída de dados normalmente irá sair com diversos números decimais, mesmo sendo salvo somente um número inteiro.</p>
+                <p>Com o <code>%f</code> (float), a saída normalmente virá com seis casas decimais, mesmo que a variável tenha apenas um valor inteiro.</p>
                 <b><p>Exemplo:</p></b>
                 <section class="sintax">
-                    <p>float n1 = 1;</p>
-                    <p>printf("%f/n", n1);</p>
+                    <pre><code>float n1 = 1;
+printf("%f\n", n1);</code></pre>
                 </section>
-                <p>Saída: 1.000000</p>
+                <p><strong>Saída:</strong> 1.000000</p>
                 <hr>
                 <h1>Scanf() - Entrada de dados em C</h1>
-                <p>A função scanf é usada para ler dados digitados pelo usuário.</p>
+                <p>A função <code>scanf</code> é usada para ler dados digitados pelo usuário.</p>
                 <b><p>Sintaxe:</p></b>
                 <section class="sintax">
-                    <p>scanf("%i", &variavel);</p>
+                    <pre><code>scanf("%i", &amp;variavel);</code></pre>
                 </section>
                 <b><p>Importante:</p></b>
-                <p>O operador & (e-comercial) é utilizado para passar o endereço da variável, permitindo que o valor digitado seja armazenado nela.</p>
+                <p>O operador <code>&amp;</code> (e-comercial) é utilizado para passar o endereço da variável, permitindo que o valor digitado seja armazenado nela.</p>
                 <b><p>Exemplo:</p></b>
                 <section class="sintax">
-                    <p>#include stdio.h</p>
-                    <p>int main(){</p>
-                    <p>int idade;</p>
-                    <p>printf("Digite sua idade: ");</p>
-                    <p>scanf("%i", &idade);</p>
-                    <p>fflush(stdin);</p>
-                    <p>printf("Voce tem %i anos", idade);</p>
-                    <p>}</p>
+                    <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int idade;
+    printf("Digite sua idade: ");
+    scanf("%i", &amp;idade);
+    fflush(stdin);
+    printf("Você tem %i anos", idade);
+    return 0;
+}</code></pre>
                 </section>
-                <p>Obs: Utilize o "fflush(stdin)" para poder retirar dados de espaços e enters desnecessários. Dessa forma o scanf só irá pegar as informações digitadas de fato. Não é obrigatório, mas é uma boa prática</p>
+                <p><strong>Obs:</strong> Utilize o <code>fflush(stdin)</code> para limpar o buffer de entrada. Isso evita que espaços e "enters" indesejados interfiram na leitura dos dados. Não é obrigatório, mas é uma boa prática.</p>
                 <p><a href="../exercises/class5Exercises.html" class="acessExercises">Exercícios</a></p>
             </section>
         </article>

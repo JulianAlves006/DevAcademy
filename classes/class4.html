@@ -31,24 +31,26 @@
                 <p>Imagine que o computador é como uma calculadora super poderosa. Quando você quer fazer contas ou tomar decisões com ele, você usa <b>expressões</b>, que são como pequenas frases que dizem o que você quer calcular ou comparar.</p>
                 <p>Para montar essas "frases", usamos <b>operadores</b>. </p>
 
-            
                 <br>
             <h2 class="subtitulo">O que é um operador?</h2> </br>
                 <p>Um operador é um <b>símbolo</b> que diz ao computador o que fazer com <b>valores</b> ou <b>variáveis</b> (como números guardados na memória).</p>
                 <p>Por exemplo:</p>
                 <ul class="classList">
                     <li>+ é o operador de <b>adição</b> (soma).</li>
-                    <li>> é o operador de <b>maior que</b> (comparação).</li>
+                    <li>&gt; é o operador de <b>maior que</b> (comparação).</li>
                     <li>&& é o operador de <b>"e" lógico</b> (ver se duas coisas são verdadeiras).</li> 
                 </ul>
                 
-            <h3 class="subtitulo">O que é uma expressão?</p></h3>
+            <h3 class="subtitulo">O que é uma expressão?</h3>
                 <p>Uma expressão é uma combinação de valores e operadores</p>
                 <p> Por exemplo:</p>
-                <p>3 + 5 <br>
-                    É uma expressão aritmética. Ela soma 3 e 5. Resultado: 8.
-                    </p>
-             
+                <section class="sintax">
+                    <pre><code>
+3 + 5
+// É uma expressão aritmética. Ela soma 3 e 5. Resultado: 8.
+                    </code></pre>
+                </section>
+
             <h4 class="subtitulo">Tipos de Operadores</h4>
                <p><b>1. Operadores Aritméticos (matemática básica)</b></p>
                <table class="tabela">
@@ -92,9 +94,9 @@
                </table>
                 <p style="font-size: 20px;">* O operador % serve pra ver o resto. Por exemplo: 7 balas divididas para 3 crianças dá 2 balas cada, e sobra 1 → esse 1 é o resto.</p>
 
-                    <p><b>2.  Operadores Relacionais (comparações)</b></p>
-                    <p>Esses operadores <b>comparam dois valores</b> e dizem se a comparação é <b>verdadeira (1)</b> ou <b>falsa (0)</b></p>
-                 <table class="tabela">
+                <p><b>2.  Operadores Relacionais (comparações)</b></p>
+                <p>Esses operadores <b>comparam dois valores</b> e dizem se a comparação é <b>verdadeira (1)</b> ou <b>falsa (0)</b></p>
+                <table class="tabela">
                     <tr>
                         <td><b>Símbolo</b></td>
                         <td><b>Significado</b></td>
@@ -137,36 +139,36 @@
                         <td>5 &gt;= 2</td>
                         <td>Verdadeiro (1)</td>
                     </tr>
-                 </table>
+                </table>
                     
-                    <p><b>3.  Operadores Lógicos (usados em decisões)</b></p>
-                    <p>Esses operadores combinam comparações. Muito usados em <b>"se isso e aquilo"</b> ou <b>"se isso ou aquilo"</b>.</p>
-                    <table class="tabela">
-                        <tr>
-                            <td><b>Símbolo</b></td>
-                            <td><b>Nome</b></td>
-                            <td><b>O que faz</b></td>
-                            <td><b>Exemplo</b></td>
-                        </tr>
-                        <tr>
-                            <td>&&</td>
-                            <td>E (AND)</td>
-                            <td>Verdadeiro <b>só se as duas condições forem verdadeiras</b></td>
-                            <td>(idade &gt; 18 && idade &lt; 60)</td>
-                        </tr>
-                        <tr>
-                            <td>||</td>
-                            <td>OU (OR)</td>
-                            <td>Dá verdadeiro se <b>uma só</b> for verdadeira</td>
-                            <td>(idade &lt; 18 || idade &gt; 60)</td>
-                        </tr>
-                        <tr>
-                            <td>!</td>
-                            <td>NÃO (NOT)</td>
-                            <td>Inverte o valor: se era verdadeiro, vira falso</td>
-                            <td>!(x &gt; 0) → se x for 1, vira 0</td>
-                        </tr>
-                    </table>
+                <p><b>3.  Operadores Lógicos (usados em decisões)</b></p>
+                <p>Esses operadores combinam comparações. Muito usados em <b>"se isso e aquilo"</b> ou <b>"se isso ou aquilo"</b>.</p>
+                <table class="tabela">
+                    <tr>
+                        <td><b>Símbolo</b></td>
+                        <td><b>Nome</b></td>
+                        <td><b>O que faz</b></td>
+                        <td><b>Exemplo</b></td>
+                    </tr>
+                    <tr>
+                        <td>&&</td>
+                        <td>E (AND)</td>
+                        <td>Verdadeiro <b>só se as duas condições forem verdadeiras</b></td>
+                        <td>(idade &gt; 18 && idade &lt; 60)</td>
+                    </tr>
+                    <tr>
+                        <td>||</td>
+                        <td>OU (OR)</td>
+                        <td>Dá verdadeiro se <b>uma só</b> for verdadeira</td>
+                        <td>(idade &lt; 18 || idade &gt; 60)</td>
+                    </tr>
+                    <tr>
+                        <td>!</td>
+                        <td>NÃO (NOT)</td>
+                        <td>Inverte o valor: se era verdadeiro, vira falso</td>
+                        <td>!(x &gt; 0) → se x for 1, vira 0</td>
+                    </tr>
+                </table>
 
             <h5 class="subtitulo">Ordem de Precedência dos Operadores</h5>
                 <p>Quando uma expressão tem <b>vários operadores misturados</b> (como +, *, &&, ==...), o C <b>precisa saber qual parte resolver primeiro</b>.</p>
@@ -184,57 +186,51 @@
 
             <h6 class="subtitulo">4.  Exemplo prático:</h6>
                 <p><b>Exemplo 1: Operadores Aritméticos</b></p>
-                    <section class="sintax">
-                    <p>#include &lt;stdio.h&gt;</p>
-                     <p>int main() {</p>
-                     <p>&nbsp;&nbsp;&nbsp;&nbsp;int a = 10, b = 3;</p>
-                     <p>&nbsp;&nbsp;&nbsp;&nbsp;printf("Soma: %d\n", a + b);</p>
-                     <p>&nbsp;&nbsp;&nbsp;&nbsp;printf("Subtração: %d\n", a - b);</p>
-                     <p>&nbsp;&nbsp;&nbsp;&nbsp;printf("Multiplicação: %d\n", a * b);</p>
-                     <p>&nbsp;&nbsp;&nbsp;&nbsp;printf("Divisão: %d\n", a / b);</p>
-                     <p>&nbsp;&nbsp;&nbsp;&nbsp;printf("Resto: %d\n", a % b);</p>
-                     <p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
-                    <p>}</p>
-                     </section>
-                    <P>Esse código faz <b>operações matemáticas básicas </b>com dois números (a = 10 e b = 3) e mostra os resultados</P>
+                <section class="sintax">
+                    <pre><code>
+#include &lt;stdio.h&gt;
+int main() {
+    int a = 10, b = 3;
+    printf("Soma: %d\n", a + b);
+    printf("Subtração: %d\n", a - b);
+    printf("Multiplicação: %d\n", a * b);
+    printf("Divisão: %d\n", a / b);
+    printf("Resto: %d\n", a % b);
+    return 0;
+}
+                    </code></pre>
+                </section>
+                <p>Esse código faz <b>operações matemáticas básicas </b>com dois números (a = 10 e b = 3) e mostra os resultados</p>
+
                 <p><b>Exemplo 2: Relacionais e Lógicos</b></p>
-                    <section class="sintax">
-                    <p>#include &lt;stdio.h&gt;</p>
-                    <p>int main() {</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;int idade = 20;</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;if (idade &gt;= 18 &amp;&amp; idade &lt;= 60) {</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("Adulto.\n");</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;} else {</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("Fora da faixa adulta.\n");</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
-                    <p>}</p>
-                    </section>
-                  <p>Esse código verifica se uma idade está entre 18 e 60 anos</p>  
-                 
+                <section class="sintax">
+                    <pre><code>
+#include &lt;stdio.h&gt;
+int main() {
+    int idade = 20;
+    if (idade &gt;= 18 &amp;&amp; idade &lt;= 60) {
+        printf("Adulto.\n");
+    } else {
+        printf("Fora da faixa adulta.\n");
+    }
+    return 0;
+}
+                    </code></pre>
+                </section>
+                <p>Esse código verifica se uma idade está entre 18 e 60 anos</p>  
+
                 <p><b>Exemplo 3: Precedência</b></p>
-                    <section class="sintax">
-                    <p>#include &lt;stdio.h&gt;</p>
-                    <p>int main() {</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;int resultado = 10 + 5 * 2;</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;printf("Resultado: %d\n", resultado); <span>// Saída: 20 (multiplica antes)</span></p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
-                    <p>}</p>
-                    </section>
-                <p>Esse código mostra como o C decide <b>qual operação fazer primeiro</b> numa expressão.</p>
-
-            <h7 class="subtitulo">Dica Final</h7>
-                    <p>Se você pensar nos operadores como <b>símbolos que ligam pedaços de informação</b>, eles vão ficar mais fáceis de entender.</p>
-                    <ul class="classList">
-                        <li>Operadores que fazem contas → Aritméticos</li>
-                        <li>Operadores que comparam valores → Relacionais</li>
-                        <li>Operadores que juntam condições → Lógicos</li> 
-                    </ul>
-                                    
-                    
-                    <p><a href="../exercises/class4Exercises.html" class="acessExercises">Exercícios</a></p>
-
-
+                <section class="sintax">
+                    <pre><code>
+#include &lt;stdio.h&gt;
+int main() {
+    int resultado = 10 + 5 * 2;
+    printf("Resultado: %d\n", resultado); // Saída: 20 (multiplica antes)
+    return 0;
+}
+                    </code></pre>
+                </section>
+                  <p><a href="../exercises/class4Exercises.html" class="acessExercises">Exercícios</a></p>
             </section>
         </article>
     </div>
