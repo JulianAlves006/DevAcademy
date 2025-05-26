@@ -151,3 +151,21 @@ hr{
 .aula{
     margin-left: 1vh;
 }
+
+.acessNextClass{
+    text-align: center;
+    text-decoration: none;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vh;
+    color: white;
+    background-color: #006973;
+    border-radius: 30px;
+    padding: 1vh;
+}
+
+.buttonsNextPrev{
+    display: flex;
+    justify-content: space-between;
+}
