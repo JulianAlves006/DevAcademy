@@ -18,6 +18,7 @@
   display: flex;
   justify-content: center;
   padding: 2vh;
+  text-align: center;
 }
 
 .classes ul {
